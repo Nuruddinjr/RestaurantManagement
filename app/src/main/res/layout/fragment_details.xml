@@ -1,0 +1,99 @@
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="uz.iutlab.restaurantmanagement.DetailsFragment">
+
+    <TableRow android:layout_weight="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:text="Table name" />
+
+        <TextView
+            android:id="@+id/detailsFragment_tableName"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:text="" />
+    </TableRow>
+
+    <TableRow android:layout_weight="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:text="Enter Time" />
+
+        <TextView
+            android:id="@+id/detailsFragment_enterTime"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:text=""
+
+            />
+    </TableRow>
+
+    <TableRow android:layout_weight="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:text="Spaghetti" />
+
+        <TextView
+            android:id="@+id/detailsFragment_spaghetti"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:text="" />
+    </TableRow>
+
+    <TableRow android:layout_weight="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:text="Pizza" />
+
+        <TextView
+            android:id="@+id/detailsFragment_pizza"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:text="" />
+    </TableRow>
+
+    <TableRow android:layout_weight="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:text="Membership" />
+
+        <TextView
+            android:id="@+id/detailsFragment_membership"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:text="" />
+    </TableRow>
+
+    <TableRow
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Price" />
+
+        <TextView
+            android:id="@+id/detailsFragment_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="" />
+    </TableRow>
+
+
+</TableLayout>

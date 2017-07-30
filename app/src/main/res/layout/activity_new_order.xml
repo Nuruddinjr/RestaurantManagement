@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    android:background="@color/grayish"
+    android:orientation="vertical"
+    tools:context="uz.iutlab.restaurantmanagement.NewOrderActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Body2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="Spaghetti"
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/newOrder_spaghettiCount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:hint="Spaghetti Count"
+            android:inputType="number"
+            android:textSize="16dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Body2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="Pizza"
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/newOrder_pizzaCount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:hint="Pizza Count"
+            android:inputType="number"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Body2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="Membership"
+            android:textSize="16dp" />
+
+
+        <RadioGroup
+            android:id="@+id/newOrder_radioGroup"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/newOrder_basicMembership"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Basic Membership"
+                android:textSize="16dp"
+                android:onClick="radioClick"
+                />
+
+            <RadioButton
+                android:id="@+id/newOrder_vipMembership"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="VIP Membership"
+                android:textSize="16dp"
+                android:onClick="radioClick"
+                />
+
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/newOrder_saveButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:text="Save" />
+
+        <Button
+            android:id="@+id/newOrder_cancelButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:text="Cancel" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fragmentBackground"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="uz.iutlab.restaurantmanagement.TableTypesFragment"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_margin="10sp">
+
+        <Button
+            android:id="@+id/tableTypes_appleTable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/White"
+            android:text="Apple Table (Empty)"
+            android:textColor="@color/SaddleBrown"
+
+            />
+
+        <Button
+            android:id="@+id/tableTypes_grapeTable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/White"
+            android:text="Grape Table (Empty)"
+            android:textColor="@color/Purple" />
+
+        <Button
+            android:id="@+id/tableTypes_kiwiTable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/White"
+            android:text="Kiwi Table (Empty)"
+            android:textColor="@color/Green" />
+
+        <Button
+            android:id="@+id/tableTypes_grapeFruitTable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/White"
+            android:text="Grapefruit Table (Empty)"
+            android:textColor="@color/OrangeRed" />
+    </LinearLayout>
+</LinearLayout>
+
