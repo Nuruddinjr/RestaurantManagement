@@ -3,13 +3,14 @@ package uz.iutlab.restaurantmanagement;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.annotation.StringDef;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import java.util.Random;
 
 
 /**
@@ -78,6 +79,9 @@ public class DetailsFragment extends Fragment {
             setSpaghetti(data[1]);
             setPizza(data[2]);
             setMembership(data[3]);
+            Random rand = new Random(1230);
+            int random_integer = rand.nextInt(1000-100) + 100;
+            setPrice(String.valueOf(random_integer)+" $");
         }else {
             Toast.makeText(getActivity(),"No data is given",Toast.LENGTH_SHORT);
         }

@@ -1,5 +1,6 @@
 package uz.iutlab.restaurantmanagement;
 
+import android.content.Intent;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
@@ -37,8 +38,24 @@ public class NewOrderActivity extends AppCompatActivity {
         saveButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                collectData();
-                details_fragment.setData(data);
+                Intent intent = new Intent(NewOrderActivity.this, MainActivity.class);
+                String enterTime = java.text.DateFormat.getDateTimeInstance().format(Calendar.getInstance().getTime());
+                intent.putExtra("time",enterTime);
+                intent.putExtra("sp_count",spaghettiCount.getText().toString());
+                intent.putExtra("pz_count",pizzaCount.getText().toString());
+                intent.putExtra("m_type",membershipType);
+                setResult(RESULT_OK, intent);
+                finish();
+
+
+            }
+        });
+
+        cancelButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(NewOrderActivity.this, MainActivity.class);
+                startActivity(intent);
             }
         });
 
@@ -63,16 +80,5 @@ public class NewOrderActivity extends AppCompatActivity {
     }
 
 
-    public void collectData(){
-        String enterTime = java.text.DateFormat.getDateTimeInstance().format(Calendar.getInstance().getTime());
 
-        String [] array = {
-                enterTime,
-                spaghettiCount.getText().toString(),
-                pizzaCount.getText().toString(),
-                membershipType
-        };
-        data = array;
-
-    }
 }
